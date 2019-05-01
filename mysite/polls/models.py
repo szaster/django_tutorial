@@ -1,11 +1,10 @@
-from django.db import models
-
 # Create your models here.
 from django.db import models
 
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
+    # field's name will be used as the column name in the database
     pub_date = models.DateTimeField('date published')
 
 
